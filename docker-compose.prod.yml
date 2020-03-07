@@ -47,5 +47,3 @@ volumes:
   postgres_data:
   static_volume:
   media_volume:
-  ./data/certbot/conf:
-  ./data/certbot/www:
