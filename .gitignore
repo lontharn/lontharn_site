@@ -136,7 +136,6 @@ dmypy.json
 .pytype/
 
 # Files
-app/staticfiles
 app/mediafiles
 
 # Pycharm
