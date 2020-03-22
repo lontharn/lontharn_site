@@ -58,6 +58,7 @@ class UserEducation(models.Model):
     detail     = models.TextField()
     graduated  = models.DateField()
     position   = models.PositiveIntegerField()
+    gpa        = models.DecimalField(max_digits=3, decimal_places=2)
 
     def __str__(self):
         return self.academy
