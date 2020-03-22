@@ -1,6 +1,12 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.contrib.auth.models import User
 
 
 def profiles(request):
-    return render(request, 'index.html')
+    user = User.objects.first()
+    profile = user.userprofile
+
+    return render(request, 'index.html', {
+        'user': user,
+        'profile': profile,
+    })
